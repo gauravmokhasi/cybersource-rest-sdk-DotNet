@@ -31,7 +31,6 @@ namespace Cybersource.Client
             {
                 responseBody = reader.ReadToEnd();
             }
-            Console.WriteLine("Response Body: \n" + responseBody);
             Debug.WriteLine("Response Body: \n" + responseBody);
         }
 
@@ -245,7 +244,6 @@ namespace Cybersource.Client
             string sourceString = timestamp + apiNameURI + queryString + requestBody;
             string hash = GetHash(sourceString);
             string token = "xv2:" + timestamp + ":" + hash;
-            Console.WriteLine(token);
             return token;
         }
 
