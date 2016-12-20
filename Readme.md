@@ -1,4 +1,4 @@
-# C Sharp Module for Visa API calls
+# C Sharp Module for REST API calls
 
 ## Installing the SDK 
 
