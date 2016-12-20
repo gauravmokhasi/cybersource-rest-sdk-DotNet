@@ -18,11 +18,7 @@
 
 3. Payload has to be in the form of a json file. Mention path of the payload file in app.config.
 
-4. Put API key and Shared Sercet in app.config.
-
- For more information on `app.config` refer :
-	 
-* [Manual](https://github.com/visa/SampleCode/wiki/Manual) 
+4. Put API key and Shared Sercet in app.config. For more information on `app.config` refer : [Manual](https://github.com/visa/SampleCode/wiki/Manual) 
 
 5. Load the solution into your Visual Studio using the .sln or .csproj file.
 
