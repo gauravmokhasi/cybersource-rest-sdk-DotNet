@@ -1,0 +1,45 @@
+﻿{
+  "amount": "500",
+  "currency": "USD",
+  "payment": {
+    "cardNumber": "4111111111111111",
+    "cardExpirationMonth": "10",
+    "cardExpirationYear": "2020",
+    "networkTokenTransactionType":"1",
+    "cardype": "001",
+    "cavv": "ABCDEFabcdefABCDEFabcdef0987654321234567",
+    "xid": "ABCDEFabcdefABCDEFabcdef0987654321234567"
+  },
+  "paymentSolution":"001",
+  "billTo": {
+    "street1": "901 Metro Center Blvd",
+    "street2": "Folsom Street",
+    "city": "Foster City",
+    "country": "USA",
+    "state": "CA",
+    "postalCode": "94404",
+    "firstName": "userFirst",
+    "lastName": "userLast",
+    "email": "bill@cybs.com",
+    "buildingNumber": "24",
+    "district": "san mateo",
+    "company": "visa",
+    "ipAddress": "10.20.408.500",
+    "phoneNumber": "6508764564"
+  },
+  "commerceIndicator": "internet",
+  "items": [
+    {
+      "productSKU": "A100",
+      "quantity": "1",
+      "amount": "12.99",
+      "taxAmount": "0.80"
+    },
+    {
+      "productSKU": "A101",
+      "quantity": "4",
+      "amount": "2.99",
+      "taxAmount": "0.80"
+    }
+  ],
+}
