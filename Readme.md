@@ -6,7 +6,7 @@
 
 2. Extract and go to the cybersource-rest-sdk-DotNet-master directory.
 
-3. Open Solution CyberSource from in Visual Studio.
+3. Open Solution CyberSource in Visual Studio.
 
 4. Build/Rebuild the Solution.
 
@@ -18,7 +18,7 @@
 
 3. Payload has to be in the form of a json file. Mention path of the payload file in app.config.
 
-4. Put API key and Shared Sercet in app.config. For more information on `app.config` refer : [Manual](https://github.com/visa/SampleCode/wiki/Manual) 
+4. Put API key and Shared Secret in app.config. For more information on `app.config` refer : [Manual](https://github.com/visa/SampleCode/wiki/Manual) 
 
 5. Load the solution into your Visual Studio using the .sln or .csproj file.
 
