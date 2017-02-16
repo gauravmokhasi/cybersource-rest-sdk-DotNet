@@ -1,32 +1,24 @@
 # C Sharp Module for REST API calls
 
 ## Installing the SDK 
-
-1. Download the cybersource-rest-sdk-DotNet-master.zip package into a directory of your choice. 
-
-2. Extract and go to the cybersource-rest-sdk-DotNet-master directory.
-
-3. Open Solution CyberSource from in Visual Studio.
-
-4. Build/Rebuild the Solution.
+- Download the `cybersource-rest-sdk-DotNet-master.zip` package into a directory of your choice. 
+- Extract and go to the `cybersource-rest-sdk-DotNet-master` directory.
+- Open Solution `cybersource-rest-sdk-DotNet` in Visual Studio.
+- Build/Rebuild the Solution.
 
 ## Usage
-
-1. Register on Visa Developer Platform.
-
-2. Create an application on VDP.
-
-3. Payload has to be in the form of a json file. Mention path of the payload file in app.config.
-
-4. Put API key and Shared Sercet in app.config. For more information on `app.config` refer : [Manual](https://github.com/visa/SampleCode/wiki/Manual) 
-
-5. Load the solution into your Visual Studio using the .sln or .csproj file.
-
-6. Mention the transaction type as a command line argument.
-
-6. Go to **Tests -> Debug -> All Tests**
-
-7. You can see the results under the option Debug console in your output window.
+- Register on [VDP (Visa Developer Platform)](https://developer.visa.com/ "Visa Developer Platform").
+- Create an application on VDP. Make sure "CyberSource Payment API" is checked before creating the application.
+- The Cybersource REST APIs require their payload to be in the form of a json file. Mention the path of the payload file in the `App.config`.
+  - See the project's [sample payloads](../master/test/samples/) for examples.
+- Put API key and Shared Secret in `App.config`. Cybersource Payment API uses X-Pay-Token authentication method.
+  - For more information, refer to the [VDP Manual](https://github.com/visa/SampleCode/wiki/Manual#x-pay-token-authentication "VDP Manual on Github").
+- Load the solution into your Visual Studio using the `cybersource-rest-sdk-DotNet.sln` file.
+- Under Solution Explorer, right click on the `cybersource-rest-sdk-DotNet` project, then click **Properties**.
+  - Click on **Debug**. Then under **Command line arguments**, specify the [payment service keyword](../master/Readme.md#payment-services-keywords) for the transaction type that you want to execute.
+  - Some transaction types require more than one command line argument. For example, the command line arguments for `refundSale` transactions would be `refundSale {sales-id}`. See more information on request attributes at the [VDP documentation](https://developer.visa.com/products/cybersource/reference "Cybersource Payments documentation on VDP").
+- Right click on the `cybersource-rest-sdk-DotNet` project, then click **Debug** and **Start new instance**.
+- You can see the results under the option Debug console in your output window.
 
 ## Payment Services Keywords
 
